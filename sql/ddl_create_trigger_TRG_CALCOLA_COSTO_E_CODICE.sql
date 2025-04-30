@@ -19,9 +19,9 @@ BEGIN
         PREZZO_RITORNO := 0;
     END IF;
 
-    :NEW.COSTO := 
+    :NEW.COSTO_TOTALE := 
         (PREZZO_ANDATA + PREZZO_RITORNO) *
         (:NEW.NUMERO_ADULTI + 
         (:NEW.NUMERO_BAMBINI * 0.75) + 
         (:NEW.NUMERO_NEONATI * 0.10));
-END; COMMIT;
+END;
