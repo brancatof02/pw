@@ -7,4 +7,4 @@ BEGIN
         :NEW.EMAIL,
         SUBSTR(DBMS_RANDOM.STRING('U', 10), 1, 10)
     );
-END; COMMIT;
+END;
